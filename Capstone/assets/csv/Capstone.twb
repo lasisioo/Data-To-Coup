@@ -1,0 +1,2031 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 9300.16.0511.2203                                -->
+<workbook source-build='9.3.1 (9300.16.0511.2203)' source-platform='mac' version='9.3' xml:base='https://10az.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='Book1' path='/t/lolalasisi/workbooks' revision='1.0' site='lolalasisi' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='gBPolity' inline='true' name='textscan.17jt6u90epvr701f54xu90c221ps' version='9.3'>
+      <repository-location id='gBPolity' path='datasources' revision='1.0' />
+      <connection class='textscan' directory='/Users/Lola/Documents/Dami_repo/Capstone/assets/csv' filename='gBPolity.csv' password='' server='' workgroup-auth-mode='as-is'>
+        <relation name='gBPolity.csv' table='[gBPolity#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='polity2' ordinal='0' />
+            <column datatype='real' name='gdppercap' ordinal='1' />
+            <column datatype='real' name='gdpgrowth' ordinal='2' />
+            <column datatype='real' name='urbanpop' ordinal='3' />
+            <column datatype='real' name='coup' ordinal='4' />
+            <column datatype='real' name='none' ordinal='5' />
+            <column datatype='real' name='revmagfight' ordinal='6' />
+            <column datatype='real' name='gendeathmag' ordinal='7' />
+            <column datatype='real' name='ethmagfatal' ordinal='8' />
+            <column datatype='real' name='revmagfatal' ordinal='9' />
+            <column datatype='real' name='eth' ordinal='10' />
+            <column datatype='real' name='ethmagfight' ordinal='11' />
+            <column datatype='real' name='rev' ordinal='12' />
+            <column datatype='real' name='gen' ordinal='13' />
+            <column datatype='real' name='durable' ordinal='14' />
+            <column datatype='real' name='yip' ordinal='15' />
+            <column datatype='real' name='ethnic' ordinal='16' />
+            <column datatype='real' name='linguistic' ordinal='17' />
+            <column datatype='real' name='religious' ordinal='18' />
+          </columns>
+        </relation>
+        <refresh increment-key='' incremental-updates='false' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>polity2</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[polity2]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>polity2</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gdppercap</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdppercap]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>gdppercap</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gdpgrowth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gdpgrowth]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>gdpgrowth</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>urbanpop</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[urbanpop]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>urbanpop</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coup</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coup]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>coup</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>none</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[none]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>none</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revmagfight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revmagfight]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>revmagfight</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gendeathmag</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gendeathmag]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>gendeathmag</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ethmagfatal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ethmagfatal]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>ethmagfatal</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>revmagfatal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[revmagfatal]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>revmagfatal</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>eth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[eth]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>eth</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ethmagfight</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ethmagfight]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>ethmagfight</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rev</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rev]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>rev</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gen</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[gen]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>gen</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>durable</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[durable]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>durable</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>yip</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[yip]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>yip</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ethnic</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ethnic]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>ethnic</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>linguistic</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[linguistic]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>linguistic</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>religious</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[religious]</local-name>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias>religious</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[gBPolity.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column datatype='integer' name='[Polity2 (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[polity2]' peg='0' size='2.27' />
+      </column>
+      <column caption='Coup' datatype='real' name='[coup]' role='measure' type='quantitative' />
+      <column caption='Durable' datatype='real' name='[durable]' role='measure' type='quantitative' />
+      <column caption='Eth' datatype='real' name='[eth]' role='measure' type='quantitative' />
+      <column caption='Ethmagfatal' datatype='real' name='[ethmagfatal]' role='measure' type='quantitative' />
+      <column caption='Ethmagfight' datatype='real' name='[ethmagfight]' role='measure' type='quantitative' />
+      <column caption='Ethnic' datatype='real' name='[ethnic]' role='measure' type='quantitative' />
+      <column caption='Gdpgrowth' datatype='real' name='[gdpgrowth]' role='measure' type='quantitative' />
+      <column caption='Gdppercap' datatype='real' name='[gdppercap]' role='measure' type='quantitative' />
+      <column caption='Gen' datatype='real' name='[gen]' role='measure' type='quantitative' />
+      <column caption='Gendeathmag' datatype='real' name='[gendeathmag]' role='measure' type='quantitative' />
+      <column caption='Linguistic' datatype='real' name='[linguistic]' role='measure' type='quantitative' />
+      <column caption='None' datatype='real' name='[none]' role='measure' type='quantitative' />
+      <column caption='Polity2' datatype='integer' name='[polity2]' role='measure' type='quantitative' />
+      <column caption='Religious' datatype='real' name='[religious]' role='measure' type='quantitative' />
+      <column caption='Rev' datatype='real' name='[rev]' role='measure' type='quantitative' />
+      <column caption='Revmagfatal' datatype='real' name='[revmagfatal]' role='measure' type='quantitative' />
+      <column caption='Revmagfight' datatype='real' name='[revmagfight]' role='measure' type='quantitative' />
+      <column caption='Urbanpop' datatype='real' name='[urbanpop]' role='measure' type='quantitative' />
+      <column caption='Yip' datatype='real' name='[yip]' role='measure' type='quantitative' />
+      <column-instance column='[ethnic]' derivation='None' name='[none:ethnic:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[linguistic]' derivation='None' name='[none:linguistic:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[polity2]' derivation='None' name='[none:polity2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[religious]' derivation='None' name='[none:religious:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[ethnic]' derivation='Sum' name='[sum:ethnic:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[linguistic]' derivation='Sum' name='[sum:linguistic:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[polity2]' derivation='Sum' name='[sum:polity2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[religious]' derivation='Sum' name='[sum:religious:qk]' pivot='key' type='quantitative' />
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='/Users/Lola/Documents/My Tableau Repository/Datasources/gBPolity.tde' schema='Extract' tablename='Extract' update-time='08/26/2016 04:43:35 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+            <calculation column='[Polity2 (bin)]' formula='SYS_NUMBIN([polity2],2.27)' />
+          </calculations>
+          <refresh increment-key='' incremental-updates='false'>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='21' timestamp-start='2016-08-26 16:43:35.004' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>21.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>1.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.0</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>21.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>coup</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[coup]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>coup</remote-alias>
+              <ordinal>1</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>1.3267799156315998</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.063179995982457132</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>0.134615384615</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.042374272541849153</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.041353055664731617</statistic>
+                <statistic aggregation='Var' datatype='real'>0.0017955789734509112</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0017100752128103916</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>0.11973752920822751</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>durable</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[durable]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>durable</remote-alias>
+              <ordinal>2</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>310.33345116137099</statistic>
+                <statistic aggregation='Avg' datatype='real'>14.777783388636713</statistic>
+                <statistic aggregation='Min' datatype='real'>0.43396226415099998</statistic>
+                <statistic aggregation='Max' datatype='real'>53.32</statistic>
+                <statistic aggregation='Stdev' datatype='real'>12.038323279746518</statistic>
+                <statistic aggregation='StdevP' datatype='real'>11.748200566882652</statistic>
+                <statistic aggregation='Var' datatype='real'>144.92122738768697</statistic>
+                <statistic aggregation='VarP' datatype='real'>138.02021655970188</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>7484.4650672645503</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>eth</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[eth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>eth</remote-alias>
+              <ordinal>3</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>5.1605617223809999</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.24574103439909523</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>0.57692307692300004</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.14719342426859033</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.14364607348126168</statistic>
+                <statistic aggregation='Var' datatype='real'>0.021665904147913237</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.020634194426584034</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>1.7014798586965481</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ethmagfatal</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ethmagfatal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ethmagfatal</remote-alias>
+              <ordinal>4</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>8.2958952692789971</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.39504263187042843</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>1.1257861635199999</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.28243768374150863</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.27563095616675298</statistic>
+                <statistic aggregation='Var' datatype='real'>0.079771045197268436</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.075972423997398508</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>4.8726532048427806</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ethmagfight</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ethmagfight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ethmagfight</remote-alias>
+              <ordinal>5</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>14.746563246998997</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.7022172974761427</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>1.8431372549</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.45249944193633723</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.44159423839484202</statistic>
+                <statistic aggregation='Var' datatype='real'>0.20475574495269661</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.19500547138352056</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>14.45040668942258</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ethnic</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[ethnic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ethnic</remote-alias>
+              <ordinal>6</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>10.834122719358994</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.51591060568376168</statistic>
+                <statistic aggregation='Min' datatype='real'>0.12362960000000001</statistic>
+                <statistic aggregation='Max' datatype='real'>0.67749032258099995</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.10854737418694017</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.10593139038740665</statistic>
+                <statistic aggregation='Var' datatype='real'>0.011782532442879606</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.011221459469409148</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>5.8250894630542938</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gdpgrowth</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gdpgrowth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gdpgrowth</remote-alias>
+              <ordinal>7</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>85.639191111919999</statistic>
+                <statistic aggregation='Avg' datatype='real'>4.0780567196152377</statistic>
+                <statistic aggregation='Min' datatype='real'>2.1916981132100002</statistic>
+                <statistic aggregation='Max' datatype='real'>8.2056249999999995</statistic>
+                <statistic aggregation='Stdev' datatype='real'>1.2105354603732628</statistic>
+                <statistic aggregation='StdevP' datatype='real'>1.1813616440850534</statistic>
+                <statistic aggregation='Var' datatype='real'>1.4653961008211072</statistic>
+                <statistic aggregation='VarP' datatype='real'>1.3956153341153403</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>378.54940079280107</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gdppercap</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gdppercap]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gdppercap</remote-alias>
+              <ordinal>8</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>82115.201034680009</statistic>
+                <statistic aggregation='Avg' datatype='real'>3910.2476683180957</statistic>
+                <statistic aggregation='Min' datatype='real'>1003.81395349</statistic>
+                <statistic aggregation='Max' datatype='real'>20037.344000000001</statistic>
+                <statistic aggregation='Stdev' datatype='real'>4206.8594384750286</statistic>
+                <statistic aggregation='StdevP' datatype='real'>4105.474432892006</statistic>
+                <statistic aggregation='Var' datatype='real'>17697666.335086435</statistic>
+                <statistic aggregation='VarP' datatype='real'>16854920.319129936</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>675044100.08105791</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gen</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gen</remote-alias>
+              <ordinal>9</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>1.2602678756296297</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.060012755982363317</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>0.19607843137299999</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.058085062315975947</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.056685216551381021</statistic>
+                <statistic aggregation='Var' datatype='real'>0.003373874464250809</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0032132137754769612</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='Median' datatype='real'>0.045226130653300001</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>0.14310963777758856</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gendeathmag</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[gendeathmag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gendeathmag</remote-alias>
+              <ordinal>10</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>18</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>3.0132790802507996</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.14348948001194284</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>0.50628930817600004</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.15039475636130609</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.14677025370407548</statistic>
+                <statistic aggregation='Var' datatype='real'>0.022618582740976615</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.02154150737235868</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>0.88474550317558487</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>linguistic</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[linguistic]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>linguistic</remote-alias>
+              <ordinal>11</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>10.123630830451003</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.48207765859290486</statistic>
+                <statistic aggregation='Min' datatype='real'>0.17427200000000001</statistic>
+                <statistic aggregation='Max' datatype='real'>0.67998225806500001</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.10714735200624949</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.10456510863914104</statistic>
+                <statistic aggregation='Var' datatype='real'>0.011480555041951135</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.010933861944715366</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>5.1099873480417877</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>none</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[none]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>none</remote-alias>
+              <ordinal>12</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>13.078854819550001</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.62280261045476193</statistic>
+                <statistic aggregation='Min' datatype='real'>0.26415094339599998</statistic>
+                <statistic aggregation='Max' datatype='real'>0.89600000000000002</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.15236632170206454</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.14869430446394447</statistic>
+                <statistic aggregation='Var' datatype='real'>0.023215495989017027</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.022109996180016217</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>8.6098548431549258</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>polity2</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[polity2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>polity2</remote-alias>
+              <ordinal>13</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>0.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.0</statistic>
+                <statistic aggregation='Min' datatype='integer'>-10</statistic>
+                <statistic aggregation='Max' datatype='integer'>10</statistic>
+                <statistic aggregation='Stdev' datatype='real'>6.2048368229954285</statistic>
+                <statistic aggregation='StdevP' datatype='real'>6.0553007081949835</statistic>
+                <statistic aggregation='Var' datatype='real'>38.5</statistic>
+                <statistic aggregation='VarP' datatype='real'>36.666666666666664</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='Median' datatype='integer'>0</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>770.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>religious</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[religious]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>religious</remote-alias>
+              <ordinal>14</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>8.5300568566749995</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.40619318365119045</statistic>
+                <statistic aggregation='Min' datatype='real'>0.1061171875</statistic>
+                <statistic aggregation='Max' datatype='real'>0.64596478873200003</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.10866770314451837</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.10604881942588504</statistic>
+                <statistic aggregation='Var' datatype='real'>0.011808669706705169</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.011246352101623971</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>3.7010243454725873</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rev</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rev]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rev</remote-alias>
+              <ordinal>15</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>3.7419971906705007</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.17819034241288098</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>0.43396226415099998</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.10126226422118394</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.098821851040387043</statistic>
+                <statistic aggregation='Var' datatype='real'>0.010254046155200867</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.0097657582430484453</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>0.87186868381763261</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revmagfatal</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[revmagfatal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revmagfatal</remote-alias>
+              <ordinal>16</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>8.2250543336310002</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.39166925398242858</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>1.6078431372500002</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.36896145636190819</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.36006951217878325</statistic>
+                <statistic aggregation='Var' datatype='real'>0.13613255628070028</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.12965005360066695</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>5.9441520204322007</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>revmagfight</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[revmagfight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>revmagfight</remote-alias>
+              <ordinal>17</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>11.850131065901001</statistic>
+                <statistic aggregation='Avg' datatype='real'>0.56429195551909528</statistic>
+                <statistic aggregation='Min' datatype='real'>0.0</statistic>
+                <statistic aggregation='Max' datatype='real'>1.5723270440300001</statistic>
+                <statistic aggregation='Stdev' datatype='real'>0.35942913217001327</statistic>
+                <statistic aggregation='StdevP' datatype='real'>0.35076691630454393</statistic>
+                <statistic aggregation='Var' datatype='real'>0.12918930105248888</statistic>
+                <statistic aggregation='VarP' datatype='real'>0.12303742957379894</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>9.270719653384635</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>urbanpop</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[urbanpop]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>urbanpop</remote-alias>
+              <ordinal>18</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>893.40468714930012</statistic>
+                <statistic aggregation='Avg' datatype='real'>42.543080340442863</statistic>
+                <statistic aggregation='Min' datatype='real'>27.925192307700001</statistic>
+                <statistic aggregation='Max' datatype='real'>72.318079999999995</statistic>
+                <statistic aggregation='Stdev' datatype='real'>10.787476367640679</statistic>
+                <statistic aggregation='StdevP' datatype='real'>10.527498974111117</statistic>
+                <statistic aggregation='Var' datatype='real'>116.36964638240613</statistic>
+                <statistic aggregation='VarP' datatype='real'>110.8282346499106</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>40335.580309569021</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>yip</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[yip]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>yip</remote-alias>
+              <ordinal>19</ordinal>
+              <family>gBPolity.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>167.32117105262</statistic>
+                <statistic aggregation='Avg' datatype='real'>7.9676748120295242</statistic>
+                <statistic aggregation='Min' datatype='real'>3.4375</statistic>
+                <statistic aggregation='Max' datatype='real'>17.527999999999999</statistic>
+                <statistic aggregation='Stdev' datatype='real'>4.0641073521544282</statistic>
+                <statistic aggregation='StdevP' datatype='real'>3.9661626614381764</statistic>
+                <statistic aggregation='Var' datatype='real'>16.516968569835679</statistic>
+                <statistic aggregation='VarP' datatype='real'>15.73044625698636</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>1663.5000515119573</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Polity2 (bin)</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Polity2 (bin)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Polity2 (bin)</remote-alias>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>-10.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>-0.47619047619047616</statistic>
+                <statistic aggregation='Min' datatype='integer'>-5</statistic>
+                <statistic aggregation='Max' datatype='integer'>4</statistic>
+                <statistic aggregation='Stdev' datatype='real'>2.7316487259354489</statistic>
+                <statistic aggregation='StdevP' datatype='real'>2.6658161909101725</statistic>
+                <statistic aggregation='Var' datatype='real'>7.461904761904762</statistic>
+                <statistic aggregation='VarP' datatype='real'>7.1065759637188206</statistic>
+                <statistic aggregation='Count' datatype='integer'>21</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>154.0</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.185639' measure-ordering='alphabetic' measure-percentage='0.814361' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#1f77b4'>
+              <bucket>&quot;[textscan.17jt6u90epvr701f54xu90c221ps].[none:polity2:qk]&quot;</bucket>
+            </map>
+            <map to='#1f77b4'>
+              <bucket>&quot;[textscan.17jt6u90epvr701f54xu90c221ps].[sum:polity2:qk]&quot;</bucket>
+            </map>
+            <map to='#2ca02c'>
+              <bucket>&quot;[textscan.17jt6u90epvr701f54xu90c221ps]&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;[textscan.17jt6u90epvr701f54xu90c221ps].[none:ethnic:qk]&quot;</bucket>
+            </map>
+            <map to='#9467bd'>
+              <bucket>&quot;[textscan.17jt6u90epvr701f54xu90c221ps].[sum:ethnic:qk]&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[textscan.17jt6u90epvr701f54xu90c221ps].[none:linguistic:qk]&quot;</bucket>
+            </map>
+            <map to='#d62728'>
+              <bucket>&quot;[textscan.17jt6u90epvr701f54xu90c221ps].[sum:linguistic:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[textscan.17jt6u90epvr701f54xu90c221ps].[none:religious:qk]&quot;</bucket>
+            </map>
+            <map to='#ff7f0e'>
+              <bucket>&quot;[textscan.17jt6u90epvr701f54xu90c221ps].[sum:religious:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Polity Score and GDP per Capita&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gBPolity' name='textscan.17jt6u90epvr701f54xu90c221ps' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.17jt6u90epvr701f54xu90c221ps'>
+            <column caption='Gdppercap' datatype='real' name='[gdppercap]' role='measure' type='quantitative' />
+            <column-instance column='[gdppercap]' derivation='None' name='[none:gdppercap:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[polity2]' derivation='None' name='[none:polity2:qk]' pivot='key' type='quantitative' />
+            <column caption='Polity2' datatype='integer' name='[polity2]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='omit-on-special' field='[textscan.17jt6u90epvr701f54xu90c221ps].[none:polity2:qk]' value='false' />
+            <format attr='break-on-special' field='[textscan.17jt6u90epvr701f54xu90c221ps].[none:polity2:qk]' value='false' />
+            <format attr='show-null-value-warning' field='[textscan.17jt6u90epvr701f54xu90c221ps].[none:polity2:qk]' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='3'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/circle' />
+                <format attr='mark-color' value='#b40f1e' />
+                <format attr='size' value='0.93353593349456787' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.17jt6u90epvr701f54xu90c221ps].[none:gdppercap:qk]</rows>
+        <cols>[textscan.17jt6u90epvr701f54xu90c221ps].[none:polity2:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Polity Score and Years in Power</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gBPolity' name='textscan.17jt6u90epvr701f54xu90c221ps' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.17jt6u90epvr701f54xu90c221ps'>
+            <column-instance column='[polity2]' derivation='None' name='[none:polity2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[yip]' derivation='None' name='[none:yip:qk]' pivot='key' type='quantitative' />
+            <column caption='Polity2' datatype='integer' name='[polity2]' role='measure' type='quantitative' />
+            <column caption='Yip' datatype='real' name='[yip]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#439ab9' />
+                <format attr='shape' value=':filled/triangle' />
+                <format attr='size' value='0.91154694557189941' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.17jt6u90epvr701f54xu90c221ps].[none:yip:qk]</rows>
+        <cols>[textscan.17jt6u90epvr701f54xu90c221ps].[none:polity2:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 3'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Polity Score and Durability</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gBPolity' name='textscan.17jt6u90epvr701f54xu90c221ps' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.17jt6u90epvr701f54xu90c221ps'>
+            <column caption='Durable' datatype='real' name='[durable]' role='measure' type='quantitative' />
+            <column-instance column='[durable]' derivation='None' name='[none:durable:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[polity2]' derivation='None' name='[none:polity2:qk]' pivot='key' type='quantitative' />
+            <column caption='Polity2' datatype='integer' name='[polity2]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/diamond' />
+                <format attr='size' value='0.91154694557189941' />
+                <format attr='mark-color' value='#daa800' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.17jt6u90epvr701f54xu90c221ps].[none:durable:qk]</rows>
+        <cols>[textscan.17jt6u90epvr701f54xu90c221ps].[none:polity2:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 5'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Polity Score and Ethnic Fractionalization</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gBPolity' name='textscan.17jt6u90epvr701f54xu90c221ps' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.17jt6u90epvr701f54xu90c221ps'>
+            <column caption='Ethnic' datatype='real' name='[ethnic]' role='measure' type='quantitative' />
+            <column-instance column='[ethnic]' derivation='None' name='[none:ethnic:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[polity2]' derivation='None' name='[none:polity2:qk]' pivot='key' type='quantitative' />
+            <column caption='Polity2' datatype='integer' name='[polity2]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#928daf' />
+                <format attr='shape' value=':filled/times' />
+                <format attr='size' value='0.91154694557189941' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.17jt6u90epvr701f54xu90c221ps].[none:ethnic:qk]</rows>
+        <cols>[textscan.17jt6u90epvr701f54xu90c221ps].[none:polity2:qk]</cols>
+      </table>
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Polity Score and Urban Population (%)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='gBPolity' name='textscan.17jt6u90epvr701f54xu90c221ps' />
+          </datasources>
+          <datasource-dependencies datasource='textscan.17jt6u90epvr701f54xu90c221ps'>
+            <column-instance column='[polity2]' derivation='None' name='[none:polity2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[urbanpop]' derivation='None' name='[none:urbanpop:qk]' pivot='key' type='quantitative' />
+            <column caption='Polity2' datatype='integer' name='[polity2]' role='measure' type='quantitative' />
+            <column caption='Urbanpop' datatype='real' name='[urbanpop]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='shape' value=':filled/asterisk' />
+                <format attr='size' value='0.91154694557189941' />
+                <format attr='mark-color' value='#87bba8' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[textscan.17jt6u90epvr701f54xu90c221ps].[none:urbanpop:qk]</rows>
+        <cols>[textscan.17jt6u90epvr701f54xu90c221ps].[none:polity2:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='2' type='layout-basic' w='100000' x='0' y='0'>
+          <zone h='50000' id='1' name='Sheet 1' show-title='true' w='33333' x='66667' y='50000' />
+          <zone h='50000' id='3' name='Sheet 2' show-title='true' w='66667' x='0' y='50000' />
+          <zone h='50000' id='4' name='Sheet 3' show-title='true' w='33334' x='33333' y='0' />
+          <zone h='50000' id='5' name='Sheet 5' show-title='true' w='33333' x='66667' y='0' />
+          <zone h='50000' id='6' name='Sheet 6' show-title='true' w='33333' x='0' y='0' />
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <windows source-height='28'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[textscan.17jt6u90epvr701f54xu90c221ps].[cnt:polity2:qk]</field>
+            <field>[textscan.17jt6u90epvr701f54xu90c221ps].[none:gdppercap:qk]</field>
+            <field>[textscan.17jt6u90epvr701f54xu90c221ps].[none:yip:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+    <window class='worksheet' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 3'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 5'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Sheet 1'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 3'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 5'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sheet 6'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 3' width='192'>
+      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
+      ffkWEv7XAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 5' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Sheet 6' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      AElFTkSuQmCC
+    </thumbnail>
+  </thumbnails>
+</workbook>
