@@ -1,19 +1,20 @@
 # Data To Coup
---
+
 
 A Data Science Project by [Dami Lasisi](http://lolalasisi.wixsite.com/mysite) in minor collaboration with [Morgan Murrah](https://www.github.com/airbr) providing some Web Development on the front end display/interaction.
 
-> <b>Problem Statement:</b> Considering social and political instabilities that have occurred in recent times, I want predict the likelihood of a coup d'etat within a country, given specific economic, political and social factors.
+ <b>Problem Statement:</b> Considering social and political instabilities that have occurred in recent times, I want predict the likelihood of a coup d'etat within a country, given specific economic, political and social factors.
 
->- Economic factors: income per capita, growth rate
+- Economic factors: income per capita, growth rate
 - Social factors: accounts of ethnic violence, religious, linguistic, and ethnic fractionalization, fatalities from 
   violence, urbanization
 - Political factors: polity score, length of stay for incumbent head of state
 
 [A more detailed analyis of this project is hosted at the following website](http://lolalasisi.wixsite.com/mysite/data-to-coup)
 
+--
 
-### Quickstart / Links:
+# Quickstart / Links:
 
 TBC
 
