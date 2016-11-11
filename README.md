@@ -1,28 +1,48 @@
 # Data To Coup
+--
 
-## Requirements: Python 2.7, Anaconda with following python libraries installed
+A Data Science Project by [Dami Lasisi](http://lolalasisi.wixsite.com/mysite) in minor collaboration with [Morgan Murrah](https://www.github.com/airbr) providing some Web Development on the front end display/interaction.
 
-1. numpy
-2. pandas
-3. sklearn
-4. matplotlib
-5. patsy
+> <b>Problem Statement:</b> Considering social and political instabilities that have occurred in recent times, I want predict the likelihood of a coup d'etat within a country, given specific economic, political and social factors.
+
+>- Economic factors: income per capita, growth rate
+- Social factors: accounts of ethnic violence, religious, linguistic, and ethnic fractionalization, fatalities from 
+  violence, urbanization
+- Political factors: polity score, length of stay for incumbent head of state
+
+[A more detailed analyis of this project is hosted at the following website](http://lolalasisi.wixsite.com/mysite/data-to-coup)
 
 
-## Models used:
+### Quickstart / Links:
+
+TBC
+
+
+### DS Pre Requisites
+
+* Python 2.7 
+* Anaconda with following python libraries installed:
+	1. numpy
+	2. pandas
+	3. sklearn
+	4. matplotlib
+	5. patsy
+
+
+### Data Models used:
 - Random Forest
 - AdaBoost
 - Logistic Regression
 
-<b>Problem Statement:</b> Considering social and political instabilities that have occurred in recent times, I want predict the likelihood of a coup d'etat within a country, given specific economic, political and social factors.
+<!--<b>Problem Statement:</b> Considering social and political instabilities that have occurred in recent times, I want predict the likelihood of a coup d'etat within a country, given specific economic, political and social factors.
 
 - Economic factors: income per capita, growth rate
 - Social factors: accounts of ethnic violence, religious, linguistic, and ethnic fractionalization, fatalities from 
   violence, urbanization
 - Political factors: polity score, length of stay for incumbent head of state
+-->
 
-
-## Data Dictionary:
+# Data Dictionary:
 
 | Variable | Description | Data Type | Variable Type |
 | --- | --- | :---: | --- |
