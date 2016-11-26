@@ -27,10 +27,10 @@ See the source code behind the visualizations in the following snippets-->
 
 ## Installing Jupyter Notebook
 
-![Jupyter Notebook](jupyter.svg)
+![Jupyter Notebook](https://raw.githubusercontent.com/jupyter/design/master/logo/png-2x/jupyter-sq-text-left.png)
 
 <a href="https://jupyter.org/">
-  <img src="/jupyter.svg" width="100%" height="144">
+  <img src="https://raw.githubusercontent.com/jupyter/design/master/logo/png-2x/jupyter-sq-text-left.png" width="100%" height="144">
 </a>
 
 
