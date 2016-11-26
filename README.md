@@ -29,6 +29,10 @@ See the source code behind the visualizations in the following snippets-->
 
 ![Jupyter Notebook](jupyter.svg)
 
+<a href="https://jupyter.org/">
+  <img src="/jupyter.svg" width="100%" height="144">
+</a>
+
 
 ### Local machine pre-requisites
 
