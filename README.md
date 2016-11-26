@@ -27,6 +27,9 @@ See the source code behind the visualizations in the following snippets-->
 
 ## Installing Jupyter Notebook
 
+![Jupyter Notebook](jupyter.svg)
+
+
 ### Local machine pre-requisites
 
 * Python 2.7 
