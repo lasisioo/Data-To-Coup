@@ -16,10 +16,10 @@ A Data Science Project by [Dami Lasisi](http://lolalasisi.wixsite.com/mysite) in
 
 # Quickstart / Links:
 
-`-> [Jupyter Notebook](http://jupyter.org/).` 
+#### [Jupyter Notebook](http://jupyter.org/).
 If you have Jupyter Netbook installed you should be able to view it remotely hosted at the following URL: TBD
 
-`-> Local machine.`
+#### Local machine.
 Follow the below instructions to install the necessary dependencies for viewing the notebook locally:
 
 <!--`-> Visualizations.`
