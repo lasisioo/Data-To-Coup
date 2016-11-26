@@ -16,19 +16,29 @@ A Data Science Project by [Dami Lasisi](http://lolalasisi.wixsite.com/mysite) in
 
 # Quickstart / Links:
 
-TBC
+`-> [Jupyter Notebook](http://jupyter.org/).` 
+If you have Jupyter Netbook installed you should be able to view it remotely hosted at the following URL: TBD
 
+`-> Local machine.`
+Follow the below instructions to install the necessary dependencies for viewing the notebook locally:
 
-### DS Pre Requisites
+<!--`-> Visualizations.`
+See the source code behind the visualizations in the following snippets-->
+
+## Installing Jupyter Notebook
+
+### Local machine pre-requisites
 
 * Python 2.7 
-* Anaconda with following python libraries installed:
-	1. numpy
-	2. pandas
-	3. sklearn
-	4. matplotlib
-	5. patsy
-
+	* Check for default python install 
+	* Installing Python 2.7
+* Anaconda with following python libraries installed using anaconda:
+	* Installing conda packages:
+		1. `conda install numpy`
+		2. `conda install pandas`
+		3. `conda install scikit-learn`
+		4. `conda install matplotlib`
+		5. `conda install patsy`
 
 ### Data Models used:
 - Random Forest
