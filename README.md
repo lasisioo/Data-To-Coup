@@ -16,7 +16,7 @@ A Data Science Project by [Dami Lasisi](http://lolalasisi.wixsite.com/mysite) in
 
 # Quickstart / Links:
 
-#### [Jupyter Notebook](http://jupyter.org/).
+#### [Jupyter Notebook](https://jupyter.org/).
 If you have Jupyter Netbook installed you should be able to view it remotely hosted at the following URL: TBD
 
 #### Local machine.
@@ -27,12 +27,7 @@ See the source code behind the visualizations in the following snippets-->
 
 ## Installing Jupyter Notebook
 
-![Jupyter Notebook](https://raw.githubusercontent.com/jupyter/design/master/logo/png-2x/jupyter-sq-text-left.png)
-
-<a href="https://jupyter.org/">
-  <img src="https://raw.githubusercontent.com/jupyter/design/master/logo/png-2x/jupyter-sq-text-left.png" width="100%" height="144">
-</a>
-
+See [Jupyter.org](https://jupyter.org/);
 
 ### Local machine pre-requisites
 
