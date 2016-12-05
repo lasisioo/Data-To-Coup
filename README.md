@@ -25,9 +25,7 @@ Follow the below instructions to install the necessary dependencies for viewing 
 <!--`-> Visualizations.`
 See the source code behind the visualizations in the following snippets-->
 
-## Installing Jupyter Notebook
-
-See [Jupyter.org](https://jupyter.org/);
+## [Installing Jupyter Notebook](https://jupyter.readthedocs.io/en/latest/install.html)
 
 ### Local machine pre-requisites
 
@@ -35,12 +33,14 @@ See [Jupyter.org](https://jupyter.org/);
 	* Check for default python install 
 	* Installing Python 2.7
 * Anaconda with following python libraries installed using anaconda:
-	* Installing conda packages:
+	* Manually from terminal with conda packages (if not included by default in your environment):
 		1. `conda install numpy`
 		2. `conda install pandas`
 		3. `conda install scikit-learn`
 		4. `conda install matplotlib`
 		5. `conda install patsy`
+		6. `conda install seaborn`
+		7. `conda install pydot`
 
 ### Data Models used:
 - Random Forest

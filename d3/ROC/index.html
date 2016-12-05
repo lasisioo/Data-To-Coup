@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,100,900|Open+Sans:400,300,700,600,800' rel='stylesheet' type='text/css'>
+</head>
+<style>
+
+body { 
+  font-size: 12px; 
+  font-family: 'Open Sans';
+}
+
+path { 
+    stroke-width: 3;
+    fill: none;
+    opacity: .7;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 2;
+    shape-rendering: crispEdges;
+    opacity: 1;
+}
+
+.d3-tip {
+    font-family: Verdana;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 8px;
+    color: #fff; 
+    z-index: 5070;
+  }
+
+</style>
+<body>
+
+<div id="roc"> </div>
+
+<script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="rocChart.js"></script>
+<script>
+
+var margin = {top: 30, right: 61, bottom: 70, left: 61}, 
+    width = 470 - margin.left - margin.right,
+    height = 450 - margin.top - margin.bottom;
+
+// fpr for "false positive rate"
+// tpr for "true positive rate"
+
+var rocChartOptions = {
+  "margin": margin,
+  "width": width,
+  "height": height,
+  "interpolationMode": "basis",
+  "fpr": "X",
+  "tprVariables": [
+    {
+      "name": "BPC",
+      "label": "Break Points"
+    },
+    {
+      "name": "WNR",
+      "label": "Winners"
+    },
+    {
+      "name": "FSP",
+      "label": "First Serve %",
+    },
+    {
+      "name": "NPW",
+      "label": "Net Points Won"
+    }
+  ], 
+  "animate": true,
+  "smooth": true
+}
+
+d3.json("data.json", function(error, data) {
+  rocChart("#roc", data, rocChartOptions)
+})
+
+</script>
+</body>
